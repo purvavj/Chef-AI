@@ -8,9 +8,8 @@ but try not to include too many extra ingredients. Format your response in markd
 it easier to render to a web page
 `;
 
-// Log the access token to ensure it's being loaded
-
-const hf = new HfInference("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");
+// Use the environment variable
+const hf = new HfInference(process.env.REACT_APP_HF_API_KEY);
 
 export async function getRecipeFromMistral(ingredientsArr) {
     const ingredientsString = ingredientsArr.join(", ");
