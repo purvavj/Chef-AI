@@ -54,6 +54,7 @@ The app will be accessible at http://localhost:3000.
 	3. Enter a list of ingredients in the input field.
 	4. Click Get Recipe to receive a recipe suggestion.
 
+
 📁 Project Structure
 
 /recipe-assistant
@@ -73,38 +74,15 @@ Provide a template for environment variables:
 
 REACT_APP_HF_API_KEY=your-huggingface-api-key
 
-🤝 Contributing
-
-Contributions are welcome! Follow these steps to contribute:
-
-	1. Fork the Repository
-Command:
-
-git fork
-
-	2. Create a New Branch
-Command:
-
-git checkout -b feature-branch
-
-	3.	Commit Your Changes
-Command:
-
-git commit -m "Add some feature"
-
-	4.	Push to the Branch
-Command:
-
-git push origin feature-branch
-
-	5.	Open a Pull Request
-
-📜 License
-
-This project is licensed under the MIT License.
-
 ❓ Troubleshooting
 
 	• Missing API Key: Ensure your .env file is properly configured with REACT_APP_HF_API_KEY.
 	• Environment Variable Not Working: Restart the development server after editing .env.
 	• API Errors: Check the browser console for error messages and validate your API key.
+
+ <img width="1158" alt="Screenshot 2024-11-25 at 10 51 19 PM" src="https://github.com/user-attachments/assets/c13a6a1d-111a-4df0-9d15-c3c315a6d137">
+ <img width="1470" alt="Screenshot 2024-11-25 at 10 19 02 PM" src="https://github.com/user-attachments/assets/85c97b3b-f68a-4113-9ec0-212a11cb3850">
+ <img width="1157" alt="Screenshot 2024-11-25 at 10 49 27 PM" src="https://github.com/user-attachments/assets/bf1a65c6-dd88-4f7c-98a2-875f77baec04">
+
+
+
