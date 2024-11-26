@@ -1,70 +1,114 @@
-# Getting Started with Create React App
+Recipe Assistant 🍳
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Recipe Assistant is a React-based application that suggests recipes based on the ingredients you have. Powered by Hugging Face’s inference API, it helps you turn your ingredients into delicious recipes.
 
-## Available Scripts
+🚀 Features
 
-In the project directory, you can run:
+	•	Input your ingredients and get recipe suggestions.
+	•	Leverages the Hugging Face mistralai/Mixtral-8x7B-Instruct-v0.1 model.
+	•	User-friendly recipe output in Markdown format.
 
-### `npm start`
+🛠️ Setup Instructions
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+Prerequisites
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+Before you begin, ensure you have the following installed:
 
-### `npm test`
+	•	Node.js (v14+ recommended)
+	•	A Hugging Face API key (get one here).
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+Steps to Set Up
 
-### `npm run build`
+	1.	Clone the Repository
+Command:
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+git clone https://github.com/your-username/recipe-assistant.git
+cd recipe-assistant
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+	2.	Install Dependencies
+Command:
 
-### `npm run eject`
+npm install
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+	3.	Create a .env File
+Steps:
+	•	In the root of the project, create a .env file.
+	•	Add the following line:
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+REACT_APP_HF_API_KEY=your-huggingface-api-key
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
 
-## Learn More
+	4.	Run the Application
+Command:
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+npm start
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+The app will be accessible at http://localhost:3000.
 
-### Code Splitting
+📝 Usage
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+	1.	Open the app in your browser.
+	2.	Input your Hugging Face API key (if prompted).
+	3.	Enter a list of ingredients in the input field.
+	4.	Click Get Recipe to receive a recipe suggestion.
 
-### Analyzing the Bundle Size
+📁 Project Structure
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+/recipe-assistant
+├── /public            # Static assets
+├── /src               # Application source code
+│   ├── /components    # React components
+│   ├── App.js         # Main app component
+│   ├── api.js         # API integration
+├── .env.example       # Environment variable template
+├── .gitignore         # Ignored files for Git
+├── package.json       # Project dependencies and metadata
+└── README.md          # Project documentation
 
-### Making a Progressive Web App
+📂 .env.example
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+Provide a template for environment variables:
 
-### Advanced Configuration
+REACT_APP_HF_API_KEY=your-huggingface-api-key
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+🤝 Contributing
 
-### Deployment
+Contributions are welcome! Follow these steps to contribute:
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+	1.	Fork the Repository
+Command:
 
-### `npm run build` fails to minify
+git fork
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+
+	2.	Create a New Branch
+Command:
+
+git checkout -b feature-branch
+
+
+	3.	Commit Your Changes
+Command:
+
+git commit -m "Add some feature"
+
+
+	4.	Push to the Branch
+Command:
+
+git push origin feature-branch
+
+
+	5.	Open a Pull Request
+
+📜 License
+
+This project is licensed under the MIT License.
+
+❓ Troubleshooting
+
+	•	Missing API Key: Ensure your .env file is properly configured with REACT_APP_HF_API_KEY.
+	•	Environment Variable Not Working: Restart the development server after editing .env.
+	•	API Errors: Check the browser console for error messages and validate your API key.
