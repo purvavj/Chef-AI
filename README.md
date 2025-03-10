@@ -15,7 +15,7 @@ Prerequisites
 Before you begin, ensure you have the following installed:
 
 	• Node.js (v14+ recommended)
-	• A Hugging Face API key (get one here).
+	• A Hugging Face API key.
 
 Steps to Set Up
 
